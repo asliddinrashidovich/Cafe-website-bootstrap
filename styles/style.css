@@ -46,9 +46,18 @@
     color: #0a0a0a;
 }
 
+/* header bottom */
+.header-tagger {
+    width: 40px;
+    height: 3px;
+    border-radius: 4px;
+    background: rgb(178, 41, 107);
+}
+
 a {
   text-decoration: none;
 }
+
 a:hover,
 a:focus {
   color: var(--text-primary);
@@ -136,6 +145,7 @@ header {
     left: 0;
     width: 100%;
     transition: all ease 0.3s;
+    z-index: 10;
 }
 .misol-uchun-header {
     transition: all ease 0.3s;
@@ -161,4 +171,160 @@ header .navigation-wrap .navbar-nav li a:hover {
 }
 .section-1 .top-banner .container {
     padding-top: 200px;
+}
+
+
+/* story */
+.story {
+    margin: 70px 0;
+}
+/* /story */
+
+/* services */
+.services {
+    background: #f5f5f5;
+}
+.services .row .col-md-2 {
+    margin-top: 100px;
+    box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.65);
+    margin: 20px;
+    height: 300px;
+    transition:  all 0.5s  ease;
+}
+.services .row .col-md-2:hover
+ {
+    background: red!important;
+    cursor: pointer;
+}
+.services .row .col-md-2 .img-box {
+    background: #f4f1f1;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 2;
+    width: 160px;
+    height: 160px;
+}
+.services .row .col-md-2 .img-box  img {
+    width: 100%;
+}
+.services .row {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.services .row .col-md-2 .offer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -130px;
+}
+.services .row .col-md-2 h4 {
+    margin-top: 50px;
+}
+/* /services */
+
+/* feautures */
+.feature {
+    background: #0a0a0a;
+}
+.feature .row .col-md-4 .card .line {
+    text-decoration: line-through;
+    color: #aba8b0;
+    margin-left: 5px;
+}
+.feature .row .col-md-4 {
+    width: 440px;
+    height: 480px;
+}
+.feature .row .col-md-4 .card {
+    min-width: 100%;
+    border: none;
+    min-height: 100%;
+    overflow: hidden;
+}
+.feature .row .col-md-4 .card .card-body {
+    overflow: hidden;
+}
+.feature .row .col-md-4 .card:hover {
+    cursor: pointer;
+}
+.feature .row .col-md-4 .card a {
+    padding: 10px 20px;
+}
+.feature .row .col-md-4 .card .img-box {
+    transition: all ease 0.5s;
+    height: 50%;
+    overflow: hidden;
+}
+.feature .row .col-md-4 .card .img-box:hover {
+    transform: scale3d(1.2,1.2,2);
+    overflow: hidden;
+}
+.feature .row .col-md-4 .card img {
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+.feature .row .col-md-4 .card img:hover {
+    transform: rotate3d(1, 1, 1, 5deg);
+    overflow: hidden;
+}
+.feature .row .col-md-4 .card .img-box {
+    overflow: hidden;
+}
+/* /Feature section css */
+
+/* delivery */
+.delivery {
+    background: url(/images/bg/bg-4.jpg);
+    background-size: cover;
+    background-position: top 40px;
+}
+/* delivery */
+
+/* app */
+.app {
+    background: url(/images/bg/bg-5.jpg);
+    background-size: cover;
+    background-position: bottom top;
+}
+/* /app */
+
+
+/* newsletter */
+.newsletter .input-group {
+    width: 700px;
+    margin: auto;
+}
+.newsletter {
+    background: url(/images/bg/bg-6.jpg);
+}
+/* /newsletter */
+
+/* footer */
+.footer {
+    background:#0a0a0a;
+}
+.footer ul li a:hover {
+    color: #ffa323;
+}
+.footer ul li {
+    margin: 20px 10px;
+}
+.footer .footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .blogs i {
+    margin: 10px;
+    font-size: 30px;
+    color: #fff;
+    transition: all ease 0.2s;
+}
+.footer .blogs i:hover {
+    cursor: pointer;
+    color: #ffa323;
 }
